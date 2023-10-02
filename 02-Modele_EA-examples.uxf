@@ -1,0 +1,115 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>50</y><w>120</w><h>230</h></coordinates><panel_attributes>Employé
+--
+_NoSS_
+Prénom [1..*]
+Nom
+DateNaissance
+Sex
+Adresse
+    Numéro
+    Rue
+    Ville
+    Département
+    CodePostal
+Salaire</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>390</y><w>120</w><h>150</h></coordinates><panel_attributes>Employé
+--
+_NoSS_
+Prénom
+Nom
+DateNaissance
+Sex
+Adresse
+Salaire</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>400</y><w>130</w><h>60</h></coordinates><panel_attributes>Département
+--
+_Numéro_
+Nom</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>390</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1..1
+Travaille_pour &gt;</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>430</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..1
+m2=0..1
+Dirige &gt;</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>470</y><w>130</w><h>60</h></coordinates><panel_attributes>Projet
+--
+_Numéro_
+Nom</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>490</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1..*
+&lt; Travaille_sur</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>550</y><w>130</w><h>50</h></coordinates><panel_attributes>Travaille_sur
+--
+Heures</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>500</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>480</y><w>130</w><h>80</h></coordinates><panel_attributes>Dépendant
+--
+LienFamilial
+Sex
+DateNaissance</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>750</x><y>580</y><w>130</w><h>50</h></coordinates><panel_attributes>style=wordwrap
+Dépendant est une entité faible</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>550</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>490</y><w>280</w><h>50</h></coordinates><panel_attributes>lt=[Prénom_dép]-
+m2=1
+m1=        1..1
+           A_la_charge_de</panel_attributes><additional_attributes>50;20;260;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>400</y><w>140</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=0..1
+r1=supervisé
+r2=superviseur</panel_attributes><additional_attributes>120;20;10;20;10;60;120;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>400</y><w>130</w><h>60</h></coordinates><panel_attributes>Lieu
+--
+_Nom_
+Adresse</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>420</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..*
+m2=1..*</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>420</x><y>140</y><w>100</w><h>60</h></coordinates><panel_attributes>type=decision
+valign=center
+Projection</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>210</y><w>130</w><h>60</h></coordinates><panel_attributes>Séance
+--
+_Date_
+_HeureDébut_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>140</y><w>130</w><h>60</h></coordinates><panel_attributes>Film
+--
+_Titre_
+Durée</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>70</y><w>130</w><h>60</h></coordinates><panel_attributes>Salle
+--
+_Nom_
+Capacité</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>160</y><w>80</w><h>40</h></coordinates><panel_attributes>lt=-
+m2=1</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>90</y><w>120</w><h>70</h></coordinates><panel_attributes>lt=-
+m2=*</panel_attributes><additional_attributes>100;50;100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>190</y><w>120</w><h>80</h></coordinates><panel_attributes>lt=-
+m2=*</panel_attributes><additional_attributes>100;10;100;50;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>40</y><w>130</w><h>60</h></coordinates><panel_attributes>Salle
+--
+_Nom_
+Capacité</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>270</y><w>130</w><h>60</h></coordinates><panel_attributes>Séance
+--
+_Date_
+_HeureDébut_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1190</x><y>40</y><w>130</w><h>60</h></coordinates><panel_attributes>Film
+--
+_Titre_
+Durée</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>970</x><y>120</y><w>130</w><h>50</h></coordinates><panel_attributes>Projection
+--
+Tarif</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1090</x><y>90</y><w>210</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1..1
+Concerne &gt;</panel_attributes><additional_attributes>10;60;170;60;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>90</y><w>180</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1..1
+&lt; A_lieu_dans</panel_attributes><additional_attributes>160;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1020</x><y>160</y><w>130</w><h>130</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1..1
+A_lieu_pendant v</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLNote</id><coordinates><x>790</x><y>200</y><w>180</w><h>60</h></coordinates><panel_attributes>style=wordwrap
+Projection est une entité faible qui a deux entités fortes: Salle, Séance.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>930</x><y>160</y><w>70</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>50;10;10;40</additional_attributes></element><element><id>UMLNote</id><coordinates><x>530</x><y>550</y><w>190</w><h>70</h></coordinates><panel_attributes>bg=yellow
+style=wordwrap
+fontsize=12
+Pour qu'une relation de type entité faible, soit "jolie", il faut peut-être ajouter des espaces avants (ou après).</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>900</y><w>120</w><h>50</h></coordinates><panel_attributes>Directeur
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>900</y><w>120</w><h>50</h></coordinates><panel_attributes>Ingénieur
+--
+Type_ingénieur</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>900</y><w>120</w><h>50</h></coordinates><panel_attributes>Technicien
+--
+Degré</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>900</y><w>120</w><h>50</h></coordinates><panel_attributes>Secrétaire
+--
+Vitesse_frappe</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>900</y><w>120</w><h>50</h></coordinates><panel_attributes>Salarié
+--
+Salaire</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>900</y><w>120</w><h>50</h></coordinates><panel_attributes>Payé_par_heure
+--
+Prix_heure</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>990</y><w>160</w><h>50</h></coordinates><panel_attributes>Ingénieur_Directeur
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>940</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>940</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>800</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>800</y><w>400</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-
+{Disjointe,Partielle}</panel_attributes><additional_attributes>380;10;380;70;10;70;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>800</y><w>270</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>250;10;250;70;10;70;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>800</y><w>140</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>120;10;120;70;10;70;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>800</y><w>270</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-
+{Disjointe,Totale}</panel_attributes><additional_attributes>10;10;10;70;250;70;250;100</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>800</y><w>140</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;120;70;120;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>710</y><w>120</w><h>100</h></coordinates><panel_attributes>Employé
+--
+_NoSS_
+Prénom
+Nom
+DateNaissance</panel_attributes><additional_attributes></additional_attributes></element></diagram>
